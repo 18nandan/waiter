@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.env
+.env.local
+
+# Benchmark inputs and derived caches (large, downloaded, reproducible)
+bench/data/
+bench/models/
+bench/cache/
+bench/*.log
+
+# Obsolete comparison artifact (superseded by the measured meeting brief and full report)
+bench/results/WAITTER_vs_SUPERMEMORY_MATHEMATICAL_PROOF.pdf
+
+# Temporary rendered page previews and server logs
+bench/results/*.png
+server*.log
+
+# Local one-off report generators and scratch scripts
+/generate_charts.py
+/generate_proof_pdf.js
+/gen_simple.js
+/make_pdf.mjs
